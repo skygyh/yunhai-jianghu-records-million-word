@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>楔子　圣火劫余　玄鸟遗孤</title>
+<style>
+:root{--bg:#f6f1e7;--fg:#33302b;--muted:#8a8273;--rule:#ddd2bd;--accent:#8a5a2b;--quote:#efe7d6;--link:#6b4a2b;--card:#fbf7ef;}
+body.dark{--bg:#17150f;--fg:#dcd6c8;--muted:#938b79;--rule:#39342a;--accent:#cd9f5e;--quote:#211e17;--link:#d9b277;--card:#1d1a14;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--fg);transition:background .3s,color .3s;font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong","SimSun",Georgia,serif;}
+a{color:var(--link);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.page{max-width:860px;margin:0 auto;padding:0 24px 96px;}
+.cover{padding:12vh 0 6vh;text-align:center;border-bottom:1px solid var(--rule);}
+.book-title{font-size:2.8rem;letter-spacing:.28em;text-indent:.28em;margin:0 0 .4em;font-weight:700;}
+.book-sub{color:var(--accent);font-size:1.08rem;letter-spacing:.16em;margin:.3em 0;}
+.book-meta{color:var(--muted);font-size:.92rem;letter-spacing:.12em;margin-top:1.8em;}
+.toolbar{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:60;}
+.fab{width:46px;height:46px;border-radius:50%;border:1px solid var(--rule);background:var(--quote);color:var(--fg);font-size:1.18rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.15);}
+.fab:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.section{padding:5vh 0;border-bottom:1px solid var(--rule);}
+.toc-title{font-size:1.55rem;text-align:center;letter-spacing:.4em;text-indent:.4em;color:var(--accent);margin-bottom:1.2em;}
+.toc-list{list-style:none;padding:0;margin:0;}
+.toc-vol{margin:1em 0 .2em;font-size:1.15rem;font-weight:700;}
+.toc-sub{list-style:none;padding-left:1.4em;margin:.35em 0 .85em;columns:2;column-gap:2em;}
+.toc-chap{margin:.18em 0;font-size:.96rem;break-inside:avoid;}
+.content{padding-top:4vh;}
+.content p{margin:.15em 0;text-indent:2em;text-align:justify;font-size:1.12rem;line-height:2.02;letter-spacing:.012em;}
+.content ul,.content ol{padding-left:1.6em;line-height:1.95;}
+.content li{margin:.5em 0;text-align:justify;}
+h2.vol{font-size:2.1rem;text-align:center;letter-spacing:.45em;text-indent:.45em;color:var(--accent);margin:14vh 0 6vh;padding-bottom:.6em;border-bottom:1px solid var(--rule);}
+h2.vol:first-of-type{margin-top:3vh;}
+h3.chap{font-size:1.45rem;text-align:center;font-weight:700;letter-spacing:.06em;line-height:1.8;margin:7vh 0 3.6vh;}
+h4.cat{font-size:1.12rem;color:var(--accent);letter-spacing:.12em;margin:2.4em 0 .8em;}
+hr.orn{border:none;text-align:center;margin:2.6em 0;height:1em;}
+hr.orn::before{content:"❖";color:var(--muted);letter-spacing:1em;font-size:1rem;}
+blockquote{background:var(--quote);border-left:3px solid var(--accent);margin:2.5em 0;padding:1em 1.4em;border-radius:6px;}
+blockquote p{text-indent:0;margin:.5em 0;font-size:1rem;line-height:1.9;}
+em{font-style:normal;color:var(--muted);letter-spacing:.08em;}
+strong{color:var(--accent);}
+.nav{display:flex;justify-content:space-between;gap:16px;margin:24px 0 0;flex-wrap:wrap;}
+.nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--rule);border-radius:999px;background:var(--card);}
+.nav a:hover{border-color:var(--accent);text-decoration:none;}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px;}
+.card{display:block;padding:18px;border:1px solid var(--rule);border-radius:16px;background:var(--card);min-height:132px;}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px);}
+.card-title{font-size:1.08rem;font-weight:700;color:var(--accent);margin-bottom:10px;}
+.card-meta{font-size:.92rem;color:var(--muted);line-height:1.8;}
+.card-detail{margin-top:14px;border-top:1px solid var(--rule);padding-top:12px;}
+.card-detail summary{cursor:pointer;color:var(--fg);font-size:.96rem;}
+.card-detail summary:hover{color:var(--accent);}
+.chapter-links{list-style:none;padding:10px 0 0 0;margin:0;columns:2;column-gap:1.4em;}
+.chapter-link{margin:.28em 0;break-inside:avoid;line-height:1.7;font-size:.92rem;}
+.chapter-link a{color:var(--link);}
+.footer{text-align:center;color:var(--muted);letter-spacing:.3em;text-indent:.3em;padding:7vh 0 10vh;}
+@media(max-width:680px){.book-title{font-size:2.15rem;letter-spacing:.18em;text-indent:.18em;}.toc-sub{columns:1;}.content p{font-size:1.06rem;}.fab{width:42px;height:42px;}.page{padding:0 18px 88px;}.chapter-links{columns:1;}}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<div class="toolbar">
+<button id="themeBtn" class="fab" title="昼夜切换">☾</button>
+<a href="#top" class="fab" title="返回顶部">↑</a>
+<a href="#toc" class="fab" title="目录">☰</a>
+</div>
+<div class="page">
+<header class="cover">
+<h1 class="book-title">楔子　圣火劫余　玄鸟遗孤</h1>
+<p class="book-sub">云海江湖录·百万字长篇版</p>
+<p class="book-meta">楔子.md · 约2213字</p>
+</header>
+<section id="toc" class="section">
+<div class="toc-title">目录</div>
+<ul class="toc-list">
+<li class="toc-vol"><a href="#sec2">楔子　圣火劫余　玄鸟遗孤</a>
+<ul class="toc-sub">
+</ul></li>
+</ul>
+</section>
+<main class="content">
+<h2 id="sec2" class="vol">楔子　圣火劫余　玄鸟遗孤</h2>
+<hr class="orn">
+<p>洪武初年，江南连岁兵火方息，天下却未真安。</p>
+<p>城头王旗虽定，野地里旧骨未寒，山川渡口之间仍有许多说不出口的暗流。有人说是流寇余孽未尽，有人说是豪强旧党不甘，也有人说，新朝立得越快，先前那些曾替它铺路的人，死得便会越快。</p>
+<p>那一年，江南最盛的一把火，不起于州府仓廪，也不起于败军营垒，而是起在一座外人极少真正见过全貌的山庄里。</p>
+<p>山庄依山临水，三面竹海，一面深潭，楼阁高下错落，夜里常有千盏琉璃灯映着黑水，远远看去，像一片浮在雾里的赤金火海。庄中人自称奉火而生，敬日月，礼光明。江湖上提起这处地方，有人敬，有人惧，也有人只肯低声称它一声“圣火旧坛”。</p>
+<p>谁都知道，这股势力在前朝末世中并不只是一派江湖门庭。它有钱粮，有密路，有教众，有死士，也曾在群雄并起时暗暗借过许多人的手、点过许多场火。只是待到新朝坐稳龙椅，那些先前还可借来破城开路的明火暗火，忽然便都成了最碍眼的旧火。</p>
+<p>于是某夜三更，密旨自宫禁出。</p>
+<p>先动的不是大军，而是早埋进各处香火、码头、粮栈与山门旁支中的暗钉。再往后，才是甲士夜渡、火箭压墙、机括断门。那一夜风极大，火一起便几乎扑满了整座山。火里有女人哭，有孩子喊，有刀入骨声，也有极沉极沉的铜钟三响，像有人到最后仍要替这处将灭之地把礼数敲尽。</p>
+<p>内坛最深处，一个白发老人抱着尚在襁褓中的婴儿，立在一幅半卷未卷的火纹幡下，久久没有转身。</p>
+<p>他脚边倒着几具尸首，有旧徒，有侍女，也有方才还替他护住后门半刻的死士。再往外，火已烧透穿廊，梁木炸裂之声不绝。老人脸上全是烟灰，左臂也已见骨，却仍把那孩子抱得极稳。婴儿竟没有哭，只睁着一双太亮的眼，映着满殿焰色，像还不知世上正有一场大劫自他来到人间时便已等在门口。</p>
+<p>老人低头看了那孩子很久，终于把怀里三样东西一一取出。</p>
+<p>第一样，是一枚羊脂白玉雕成的玄鸟佩，玉纹细净，入手却凉，像从极深的夜里切出来的一片月。</p>
+<p>第二样，是几页早被火烟熏黄的旧绢，绢上密密写着名字、暗号与一些寻常人绝看不懂的折线标记。</p>
+<p>第三样，则是一只极细极薄的小金锁。锁不大，内侧却阴刻着四个小字：长命不绝。</p>
+<p>老人把这三样东西都贴到孩子身边，随后抬头，看向跪在身前那名浑身血透的青衣人。</p>
+<p>青衣人年约三十，右肋已被枪尖贯穿，腿上也中了一箭，若非强提一口气，只怕早已倒在殿中。他原本是坛中最不显山露水的一路护法，多年来总管药库、暗井与几条从不写在明面上的人命密线。此刻被老人死死盯住，竟仍能在满殿火光里把脊背挺直，低声道：“老坛主。”</p>
+<p>老人没有先说“带他走”，反先问了一句：“你怕不怕？”</p>
+<p>青衣人一怔。</p>
+<p>老人看着殿外冲天火势，又看回怀中婴儿，声音嘶哑，却比先前任何一刻都稳：“今日过后，带着这孩子走的人，未必还能算江湖人，也未必还能算新朝百姓。你会被人追，被人忘，被人当作旧党余孽，也会被这孩子一生的来处压得再没有一日好睡。”</p>
+<p>“这样，你还敢不敢接？”</p>
+<p>青衣人额上冷汗与血一并滚落，半晌，才重重叩头：“属下接。”</p>
+<p>老人这才把孩子递过去。</p>
+<p>“记住。”</p>
+<p>“别替他报我这一坛之仇。”</p>
+<p>“也别教他一长大，便只知自己背着什么血债。”</p>
+<p>“你只替他留一条能活着看清这一切的命。等他真长大，真知道了，再由他自己决定，这些火究竟还值不值得再往后烧。”</p>
+<p>青衣人双手接过婴儿，浑身都在发抖，却始终不敢把孩子抱得不稳半分。老人又把那几页旧绢塞进他怀里，最后才按住那枚玄鸟佩，眼里忽然闪过极深极痛的一线：“若有一日，这孩子终究还是要走到钟山、金陵、玄岳与海上那些地方去，你只让他记住一句——”</p>
+<p>“莫拿来处先压活人。”</p>
+<p>话音一落，殿梁轰然塌下半边。</p>
+<p>老人一掌把青衣人连孩子一起震向后壁暗门，自己却反身拔出供案后那口多年未用的火纹古剑，一步一步往外走去。青衣人被这一掌震得几乎呕血，跌进暗门前最后看见的，是老人的背影被焰色拖得极长，像一枝将尽未尽的火。</p>
+<p>他抱着孩子沿暗井、石道、药窖与山后枯井一路逃出。井外夜雨不知何时已下了起来，雨落在火里，蒸成满天白烟。青衣人回头望去，只见那座曾照亮半江夜色的山庄，正在火与雨之间一寸寸塌下去。有人在雨里追来，也有人在火里倒下。可更可怕的，并不是这些立时能看见的死，而是他心里已经明白：今夜之后，世上关于这场火的大半真相都会被人抹平。留下来的，多半只会是“邪教余孽伏诛”八个再干净不过的字。</p>
+<p>而自己怀里这孩子，便成了被那八个字活活埋在底下、却还没死透的最后一口气。</p>
+<p>青衣人抱着孩子走了很久很久。</p>
+<p>走到最后，他几乎已分不清自己究竟是在替哪一边逃命。是替圣火旧坛留一线骨血，是替那位走回火中的老人留一桩未竟嘱托，还是替这个尚不知道自己姓什么、将来又会被多少人盯上的婴儿，先偷一条能长大的活路。</p>
+<p>雨夜尽头，钟山在天边现出极淡极青的一线。</p>
+<p>青衣人看着那线山影，忽然想起许多年前曾听人说过一句：钟山云厚，可埋旧人；江海路远，最宜断梦。</p>
+<p>于是他咬牙改了方向，不再往南去海路，而是一路北折，带着婴儿与那几样已足够催命的旧物，消失在通往钟山的泥夜里。</p>
+<p>很多年后，世上再提起那场大火的人越来越少。有人说那不过是朝廷清剿一处妄称明火的邪坛，有人说火里其实还藏着开国旧约、宫闱秘旨与江湖大派都不敢真正碰透的血账，也有人说那夜走脱的不止一个婴儿，更走脱了一桩足以拖累半壁江山的旧梦。</p>
+<p>可无论别人怎样说，那孩子终究还是在钟山脚下活了下来。</p>
+<p>他后来有了一个名字。</p>
+<p>陆云海。</p>
+<p>而这一切，也便都要从钟山药庐那一场连下七日不肯停的冷雨，再慢慢说起。</p>
+<hr class="orn">
+<p><em>（楔子毕，正文自第一卷《钟山雨》始）</em></p>
+<div class="nav"><a href="百万字版创作总纲.html">← 百万字长篇版创作总纲</a><a href="index.html">返回索引</a><a href="第一卷_钟山雨.html">第一卷　钟山雨 →</a></div>
+</main>
+<footer class="footer">— 云海江湖录·百万字长篇版 —</footer>
+</div>
+<script>
+const themeBtn = document.getElementById('themeBtn');
+function setTheme(dark){
+  document.body.classList.toggle('dark', dark);
+  if(themeBtn){ themeBtn.textContent = dark ? '☀' : '☾'; }
+  try{ localStorage.setItem('yh_long_dark', dark ? '1' : '0'); }catch(e){}
+}
+if(themeBtn){
+  themeBtn.addEventListener('click', function(){ setTheme(!document.body.classList.contains('dark')); });
+}
+try{ setTheme(localStorage.getItem('yh_long_dark') === '1'); }catch(e){ setTheme(false); }
+</script>
+</body>
+</html>

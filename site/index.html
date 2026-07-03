@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>云海江湖录·百万字长篇版</title>
+<style>
+:root{--bg:#f6f1e7;--fg:#33302b;--muted:#8a8273;--rule:#ddd2bd;--accent:#8a5a2b;--quote:#efe7d6;--link:#6b4a2b;--card:#fbf7ef;}
+body.dark{--bg:#17150f;--fg:#dcd6c8;--muted:#938b79;--rule:#39342a;--accent:#cd9f5e;--quote:#211e17;--link:#d9b277;--card:#1d1a14;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--fg);transition:background .3s,color .3s;font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong","SimSun",Georgia,serif;}
+a{color:var(--link);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.page{max-width:860px;margin:0 auto;padding:0 24px 96px;}
+.cover{padding:12vh 0 6vh;text-align:center;border-bottom:1px solid var(--rule);}
+.book-title{font-size:2.8rem;letter-spacing:.28em;text-indent:.28em;margin:0 0 .4em;font-weight:700;}
+.book-sub{color:var(--accent);font-size:1.08rem;letter-spacing:.16em;margin:.3em 0;}
+.book-meta{color:var(--muted);font-size:.92rem;letter-spacing:.12em;margin-top:1.8em;}
+.toolbar{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:60;}
+.fab{width:46px;height:46px;border-radius:50%;border:1px solid var(--rule);background:var(--quote);color:var(--fg);font-size:1.18rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.15);}
+.fab:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.section{padding:5vh 0;border-bottom:1px solid var(--rule);}
+.toc-title{font-size:1.55rem;text-align:center;letter-spacing:.4em;text-indent:.4em;color:var(--accent);margin-bottom:1.2em;}
+.toc-list{list-style:none;padding:0;margin:0;}
+.toc-vol{margin:1em 0 .2em;font-size:1.15rem;font-weight:700;}
+.toc-sub{list-style:none;padding-left:1.4em;margin:.35em 0 .85em;columns:2;column-gap:2em;}
+.toc-chap{margin:.18em 0;font-size:.96rem;break-inside:avoid;}
+.content{padding-top:4vh;}
+.content p{margin:.15em 0;text-indent:2em;text-align:justify;font-size:1.12rem;line-height:2.02;letter-spacing:.012em;}
+.content ul,.content ol{padding-left:1.6em;line-height:1.95;}
+.content li{margin:.5em 0;text-align:justify;}
+h2.vol{font-size:2.1rem;text-align:center;letter-spacing:.45em;text-indent:.45em;color:var(--accent);margin:14vh 0 6vh;padding-bottom:.6em;border-bottom:1px solid var(--rule);}
+h2.vol:first-of-type{margin-top:3vh;}
+h3.chap{font-size:1.45rem;text-align:center;font-weight:700;letter-spacing:.06em;line-height:1.8;margin:7vh 0 3.6vh;}
+h4.cat{font-size:1.12rem;color:var(--accent);letter-spacing:.12em;margin:2.4em 0 .8em;}
+hr.orn{border:none;text-align:center;margin:2.6em 0;height:1em;}
+hr.orn::before{content:"❖";color:var(--muted);letter-spacing:1em;font-size:1rem;}
+blockquote{background:var(--quote);border-left:3px solid var(--accent);margin:2.5em 0;padding:1em 1.4em;border-radius:6px;}
+blockquote p{text-indent:0;margin:.5em 0;font-size:1rem;line-height:1.9;}
+em{font-style:normal;color:var(--muted);letter-spacing:.08em;}
+strong{color:var(--accent);}
+.nav{display:flex;justify-content:space-between;gap:16px;margin:24px 0 0;flex-wrap:wrap;}
+.nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--rule);border-radius:999px;background:var(--card);}
+.nav a:hover{border-color:var(--accent);text-decoration:none;}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px;}
+.card{display:block;padding:18px;border:1px solid var(--rule);border-radius:16px;background:var(--card);min-height:132px;}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px);}
+.card-title{font-size:1.08rem;font-weight:700;color:var(--accent);margin-bottom:10px;}
+.card-meta{font-size:.92rem;color:var(--muted);line-height:1.8;}
+.card-detail{margin-top:14px;border-top:1px solid var(--rule);padding-top:12px;}
+.card-detail summary{cursor:pointer;color:var(--fg);font-size:.96rem;}
+.card-detail summary:hover{color:var(--accent);}
+.chapter-links{list-style:none;padding:10px 0 0 0;margin:0;columns:2;column-gap:1.4em;}
+.chapter-link{margin:.28em 0;break-inside:avoid;line-height:1.7;font-size:.92rem;}
+.chapter-link a{color:var(--link);}
+.footer{text-align:center;color:var(--muted);letter-spacing:.3em;text-indent:.3em;padding:7vh 0 10vh;}
+@media(max-width:680px){.book-title{font-size:2.15rem;letter-spacing:.18em;text-indent:.18em;}.toc-sub{columns:1;}.content p{font-size:1.06rem;}.fab{width:42px;height:42px;}.page{padding:0 18px 88px;}.chapter-links{columns:1;}}
+</style>
+</head>
+<body>
+<div class="toolbar">
+<button id="themeBtn" class="fab" title="昼夜切换">☾</button>
+<a href="#top" class="fab" title="返回顶部">↑</a>
+</div>
+<div id="top"></div>
+<div class="page">
+<header class="cover">
+<h1 class="book-title">云海江湖录·百万字长篇版</h1>
+<p class="book-sub">楔子 · 十二卷 · 谱录 · 创作总纲</p>
+<p class="book-meta">Markdown 与 HTML 同步保留，可直接本地浏览与部署</p>
+</header>
+<section class="section">
+<div class="toc-title">阅读索引</div>
+<div class="index-grid"><div class="card"><a href="百万字版创作总纲.html"><div class="card-title">百万字长篇版创作总纲</div><div class="card-meta">百万字版创作总纲.md · 5个章节标题 · 约5348字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="百万字版创作总纲.html#sec3">一　创作体例</a></li><li class="chapter-link"><a href="百万字版创作总纲.html#sec4">二　十二卷总结构</a></li><li class="chapter-link"><a href="百万字版创作总纲.html#sec17">三　主要人物长篇弧线</a></li><li class="chapter-link"><a href="百万字版创作总纲.html#sec23">四　回目初排</a></li><li class="chapter-link"><a href="百万字版创作总纲.html#sec36">五　写作执行原则</a></li></ul></details></div><div class="card"><a href="楔子.html"><div class="card-title">楔子　圣火劫余　玄鸟遗孤</div><div class="card-meta">楔子.md · 约2213字</div></a></div><div class="card"><a href="第一卷_钟山雨.html"><div class="card-title">第一卷　钟山雨</div><div class="card-meta">第一卷_钟山雨.md · 10个章节标题 · 约86963字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="第一卷_钟山雨.html#sec3">第一回　钟山雨细藏龙影　药庐灯暖照孤儿</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec4">第二回　孝陵夜半来青客　旧案灯前动故人</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec5">第三回　秦淮初见金针影　画舫惊逢玉佩光</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec6">第四回　老父悬壶怜病骨　少年试胆护村童</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec7">第五回　圣火余灰燃夜雨　青衫旧使叩柴门</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec8">第六回　丧钟九响惊城阙　一掌千钧退故盟</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec9">第七回　锦衣搜山翻旧案　判官落笔索遗孤</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec10">第八回　药庐血溅恩难报　残卷灯残恨始生</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec11">第九回　假灯引火迷官道　孤影断桥护少郎</a></li><li class="chapter-link"><a href="第一卷_钟山雨.html#sec12">第十回　秦淮旧肆藏残客　孝陵荒烟困故人</a></li></ul></details></div><div class="card"><a href="第二卷_乌衣巷.html"><div class="card-title">第二卷　乌衣巷</div><div class="card-meta">第二卷_乌衣巷.md · 10个章节标题 · 约71541字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec3">第十一回　半舫青灯逢旧影　禁山白露锁孤臣</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec4">第十二回　白鹭洲头藏鬼簿　枯祠月下验残图</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec5">第十三回　乌巷旧轿传残语　碑林孤掌拒追兵</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec6">第十四回　楚门暗井开残脉　禁地孤碑照冷锋</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec7">第十五回　白马晨嘶穿晓雾　青衣冷笔迫危门</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec8">第十六回　江湖客至传兵火　北平旗举震中原</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec9">第十七回　师徒夜话忧天下　少年晨别下玄关</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec10">第十八回　官道饥民啼落日　败兵横刀逼侠肠</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec11">第十九回　黑店灯昏藏杀局　铁面书生落残棋</a></li><li class="chapter-link"><a href="第二卷_乌衣巷.html#sec12">第二十回　破局方知人世险　临歧遥望故山云</a></li></ul></details></div><div class="card"><a href="第三卷_清溪渡.html"><div class="card-title">第三卷　清溪渡</div><div class="card-meta">第三卷_清溪渡.md · 10个章节标题 · 约92889字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="第三卷_清溪渡.html#sec3">第二十一回　废栈残符通旧驿　清溪短棹避追兵</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec4">第二十二回　渡口寒灯逢逆旅　船头夜雨试同心</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec5">第二十三回　白柳夜静分真假　盐栈灯微候后舟</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec6">第二十四回　废仓暗线惊残局　高埂孤灯辨敌踪</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec7">第二十五回　烽台夜裂双边局　塌道风寒一线生</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec8">第二十六回　地灯西引穿松坳　活图暗藏入木墙</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec9">第二十七回　谷口哨寒分假路　林灯影乱辨真签</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec10">第二十八回　废仓灯冷开真匣　晓雾山深候七爷</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec11">第二十九回　桥侧微签惊使眼　雾中短刃逼真名</a></li><li class="chapter-link"><a href="第三卷_清溪渡.html#sec12">第三十回　废仓晨逼双岔路　石栈云寒两处疑</a></li></ul></details></div><div class="card"><a href="第四卷_石门栈.html"><div class="card-title">第四卷　石门栈</div><div class="card-meta">第四卷_石门栈.md · 10个章节标题 · 约88753字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="第四卷_石门栈.html#sec3">第三十一回　灰坡风冷寻窑口　黑窟声沉伏守风</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec4">第三十二回　灰道惊回藏后手　石栈云薄压前关</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec5">第三十三回　灰旗下账分明路　石门前手换活签</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec6">第三十四回　照骨七阶分生死　北脊双眼试真形</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec7">第三十五回　闸后微光开半口　脊前旧锁夺先机</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec8">第三十六回　岩罅三声催旧口　灰旗下步试前心</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec9">第三十七回　半牌离岩惊四手　一锁认主乱群锋</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec10">第三十八回　半手先沾惊旧认　三锋齐到夺残牌</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec11">第三十九回　中口微悬分主客　乱锋初合见生杀</a></li><li class="chapter-link"><a href="第四卷_石门栈.html#sec12">第四十回　半门一扣翻宾主　断牌双分引去来</a></li></ul></details></div><div class="card"><a href="第五卷_秦淮血.html"><div class="card-title">第五卷　秦淮血</div><div class="card-meta">第五卷_秦淮血.md · 10个章节标题 · 约100745字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="第五卷_秦淮血.html#sec3">第四十一回　石栈风收分去路　秦淮灯冷照归人</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec4">第四十二回　画舫旧歌牵血约　绣阁新局试深心</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec5">第四十三回　绣阁帘深翻旧诺　秦淮月冷照离心</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec6">第四十四回　暗水穿街通旧宅　残灯照井辨前盟</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec7">第四十五回　井上三叩分真伪　笺中一笔辨来人</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec8">第四十六回　细布牵宫翻旧影　残灰覆井断来踪</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec9">第四十七回　香壁潜形窥后手　秦淮隔水认宫灯</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec10">第四十八回　黑巷移灯分暗哨　危楼借火试深门</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec11">第四十九回　残扣照影寻旧谱　短笺移局逼新踪</a></li><li class="chapter-link"><a href="第五卷_秦淮血.html#sec12">第五十回　南火照门分假真　青灯引锁启重关</a></li></ul></details></div><div class="card"><a href="第六卷_苍山雪.html"><div class="card-title">第六卷　苍山雪</div><div class="card-meta">第六卷_苍山雪.md · 7个章节标题 · 约91803字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="第六卷_苍山雪.html#sec3">第五十一回　薄匣翻纹牵滇路　残笺照雪认慈踪</a></li><li class="chapter-link"><a href="第六卷_苍山雪.html#sec4">第五十二回　苍洱风高藏驿火　点苍月冷验王符</a></li><li class="chapter-link"><a href="第六卷_苍山雪.html#sec5">第五十三回　白石喉深开旧径　寒潭灯冷照遗痕</a></li><li class="chapter-link"><a href="第六卷_苍山雪.html#sec6">第五十四回　废乳泉阴藏寺影　残钟井冷试聋翁</a></li><li class="chapter-link"><a href="第六卷_苍山雪.html#sec7">第五十五回　乳市喧声藏夜约　西营黑桩验残符</a></li><li class="chapter-link"><a href="第六卷_苍山雪.html#sec8">第五十六回　残令对案分真伪　孤灯照影问营谋</a></li><li class="chapter-link"><a href="第六卷_苍山雪.html#sec9">第五十七回　雪驿传笺惊旧部　洱城借局探深门</a></li></ul></details></div><div class="card"><a href="第七卷_玄岳雷.html"><div class="card-title">第七卷　玄岳雷</div><div class="card-meta">第七卷_玄岳雷.md · 约77255字</div></a></div><div class="card"><a href="第八卷_江山残.html"><div class="card-title">第八卷　江山残</div><div class="card-meta">第八卷_江山残.md · 约81119字</div></a></div><div class="card"><a href="第九卷_古寺寒.html"><div class="card-title">第九卷　古寺寒</div><div class="card-meta">第九卷_古寺寒.md · 约80359字</div></a></div><div class="card"><a href="第十卷_永乐网.html"><div class="card-title">第十卷　永乐网</div><div class="card-meta">第十卷_永乐网.md · 约80872字</div></a></div><div class="card"><a href="第十一卷_玄岳劫.html"><div class="card-title">第十一卷　玄岳劫</div><div class="card-meta">第十一卷_玄岳劫.md · 约84032字</div></a></div><div class="card"><a href="第十二卷_云海无涯.html"><div class="card-title">第十二卷_云海无涯</div><div class="card-meta">第十二卷_云海无涯.md · 约83574字</div></a></div><div class="card"><a href="附录_谱录.html"><div class="card-title">附录　谱录</div><div class="card-meta">附录_谱录.md · 6个章节标题 · 约3508字</div></a><details class="card-detail"><summary>每回索引</summary><ul class="chapter-links"><li class="chapter-link"><a href="附录_谱录.html#sec3">一　人物谱</a></li><li class="chapter-link"><a href="附录_谱录.html#sec17">二　势力谱</a></li><li class="chapter-link"><a href="附录_谱录.html#sec24">三　武学谱</a></li><li class="chapter-link"><a href="附录_谱录.html#sec30">四　器物谱</a></li><li class="chapter-link"><a href="附录_谱录.html#sec37">五　大事年表</a></li><li class="chapter-link"><a href="附录_谱录.html#sec38">六　终卷要义小记</a></li></ul></details></div></div>
+</section>
+<footer class="footer">— 站点索引 —</footer>
+</div>
+<script>
+const themeBtn = document.getElementById('themeBtn');
+function setTheme(dark){
+  document.body.classList.toggle('dark', dark);
+  if(themeBtn){ themeBtn.textContent = dark ? '☀' : '☾'; }
+  try{ localStorage.setItem('yh_long_dark', dark ? '1' : '0'); }catch(e){}
+}
+if(themeBtn){
+  themeBtn.addEventListener('click', function(){ setTheme(!document.body.classList.contains('dark')); });
+}
+try{ setTheme(localStorage.getItem('yh_long_dark') === '1'); }catch(e){ setTheme(false); }
+</script>
+</body>
+</html>
