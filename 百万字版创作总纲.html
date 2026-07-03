@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>百万字长篇版创作总纲</title>
+<style>
+:root{--bg:#f6f1e7;--fg:#33302b;--muted:#8a8273;--rule:#ddd2bd;--accent:#8a5a2b;--quote:#efe7d6;--link:#6b4a2b;--card:#fbf7ef;}
+body.dark{--bg:#17150f;--fg:#dcd6c8;--muted:#938b79;--rule:#39342a;--accent:#cd9f5e;--quote:#211e17;--link:#d9b277;--card:#1d1a14;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--fg);transition:background .3s,color .3s;font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong","SimSun",Georgia,serif;}
+a{color:var(--link);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.page{max-width:860px;margin:0 auto;padding:0 24px 96px;}
+.cover{padding:12vh 0 6vh;text-align:center;border-bottom:1px solid var(--rule);}
+.book-title{font-size:2.8rem;letter-spacing:.28em;text-indent:.28em;margin:0 0 .4em;font-weight:700;}
+.book-sub{color:var(--accent);font-size:1.08rem;letter-spacing:.16em;margin:.3em 0;}
+.book-meta{color:var(--muted);font-size:.92rem;letter-spacing:.12em;margin-top:1.8em;}
+.toolbar{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:60;}
+.fab{width:46px;height:46px;border-radius:50%;border:1px solid var(--rule);background:var(--quote);color:var(--fg);font-size:1.18rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.15);}
+.fab:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.section{padding:5vh 0;border-bottom:1px solid var(--rule);}
+.toc-title{font-size:1.55rem;text-align:center;letter-spacing:.4em;text-indent:.4em;color:var(--accent);margin-bottom:1.2em;}
+.toc-list{list-style:none;padding:0;margin:0;}
+.toc-vol{margin:1em 0 .2em;font-size:1.15rem;font-weight:700;}
+.toc-sub{list-style:none;padding-left:1.4em;margin:.35em 0 .85em;columns:2;column-gap:2em;}
+.toc-chap{margin:.18em 0;font-size:.96rem;break-inside:avoid;}
+.content{padding-top:4vh;}
+.content p{margin:.15em 0;text-indent:2em;text-align:justify;font-size:1.12rem;line-height:2.02;letter-spacing:.012em;}
+.content ul,.content ol{padding-left:1.6em;line-height:1.95;}
+.content li{margin:.5em 0;text-align:justify;}
+h2.vol{font-size:2.1rem;text-align:center;letter-spacing:.45em;text-indent:.45em;color:var(--accent);margin:14vh 0 6vh;padding-bottom:.6em;border-bottom:1px solid var(--rule);}
+h2.vol:first-of-type{margin-top:3vh;}
+h3.chap{font-size:1.45rem;text-align:center;font-weight:700;letter-spacing:.06em;line-height:1.8;margin:7vh 0 3.6vh;}
+h4.cat{font-size:1.12rem;color:var(--accent);letter-spacing:.12em;margin:2.4em 0 .8em;}
+hr.orn{border:none;text-align:center;margin:2.6em 0;height:1em;}
+hr.orn::before{content:"❖";color:var(--muted);letter-spacing:1em;font-size:1rem;}
+blockquote{background:var(--quote);border-left:3px solid var(--accent);margin:2.5em 0;padding:1em 1.4em;border-radius:6px;}
+blockquote p{text-indent:0;margin:.5em 0;font-size:1rem;line-height:1.9;}
+em{font-style:normal;color:var(--muted);letter-spacing:.08em;}
+strong{color:var(--accent);}
+.nav{display:flex;justify-content:space-between;gap:16px;margin:24px 0 0;flex-wrap:wrap;}
+.nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--rule);border-radius:999px;background:var(--card);}
+.nav a:hover{border-color:var(--accent);text-decoration:none;}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px;}
+.card{display:block;padding:18px;border:1px solid var(--rule);border-radius:16px;background:var(--card);min-height:132px;}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px);}
+.card-title{font-size:1.08rem;font-weight:700;color:var(--accent);margin-bottom:10px;}
+.card-meta{font-size:.92rem;color:var(--muted);line-height:1.8;}
+.card-detail{margin-top:14px;border-top:1px solid var(--rule);padding-top:12px;}
+.card-detail summary{cursor:pointer;color:var(--fg);font-size:.96rem;}
+.card-detail summary:hover{color:var(--accent);}
+.chapter-links{list-style:none;padding:10px 0 0 0;margin:0;columns:2;column-gap:1.4em;}
+.chapter-link{margin:.28em 0;break-inside:avoid;line-height:1.7;font-size:.92rem;}
+.chapter-link a{color:var(--link);}
+.footer{text-align:center;color:var(--muted);letter-spacing:.3em;text-indent:.3em;padding:7vh 0 10vh;}
+@media(max-width:680px){.book-title{font-size:2.15rem;letter-spacing:.18em;text-indent:.18em;}.toc-sub{columns:1;}.content p{font-size:1.06rem;}.fab{width:42px;height:42px;}.page{padding:0 18px 88px;}.chapter-links{columns:1;}}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<div class="toolbar">
+<button id="themeBtn" class="fab" title="昼夜切换">☾</button>
+<a href="#top" class="fab" title="返回顶部">↑</a>
+<a href="#toc" class="fab" title="目录">☰</a>
+</div>
+<div class="page">
+<header class="cover">
+<h1 class="book-title">百万字长篇版创作总纲</h1>
+<p class="book-sub">云海江湖录·百万字长篇版</p>
+<p class="book-meta">百万字版创作总纲.md · 约5348字</p>
+</header>
+<section id="toc" class="section">
+<div class="toc-title">目录</div>
+<ul class="toc-list">
+<li class="toc-vol"><a href="#sec2">百万字长篇版创作总纲</a>
+<ul class="toc-sub">
+<li class="toc-chap"><a href="#sec3">一　创作体例</a></li>
+<li class="toc-chap"><a href="#sec4">二　十二卷总结构</a></li>
+<li class="toc-chap"><a href="#sec17">三　主要人物长篇弧线</a></li>
+<li class="toc-chap"><a href="#sec23">四　回目初排</a></li>
+<li class="toc-chap"><a href="#sec36">五　写作执行原则</a></li>
+</ul></li>
+</ul>
+</section>
+<main class="content">
+<h2 id="sec2" class="vol">百万字长篇版创作总纲</h2>
+<hr class="orn">
+<h3 id="sec3" class="chap">一　创作体例</h3>
+<p>本版为《云海江湖录》的长篇扩写本，独立于既有四卷成稿之外。全书按章回体铺展，计划十二卷，一百二十回，每回约八千至一万字，正文总量约一百万字。</p>
+<p>本版不改变核心骨架：洪武末年至永乐初年，靖难之役为史线，《太虚真经》与太祖密旨为江湖悬念，陆云海由钟山孤儿成长为一代大侠，终在家仇、国恨、权力与苍生之间，选择焚经弃权、归隐云海。</p>
+<p>本版重点扩写四类内容：其一，少年日常与乡土烟火，使钟山药庐成为真正可留恋的故乡；其二，六大门派与江湖支线，使武林格局与靖难站队更厚重；其三，双女主成长线，使沈灵犀与朱若兰各有独立命运与选择；其四，历史人物与庙堂棋局，使建文、朱棣、道衍、纪纲、苏牧之之间的权谋更具层次。</p>
+<p>全书语言取文白相间，章回回目以七字对句为主。全书统一沿用成文设定：沈灵犀为云南沐王府郡主，绝技为七星追魂针；玉霄子使昆仑玄阴二十四剑；赫连铁左颊带疤，使玄铁判官笔；楚昭凰为玄冥子之女、圣火教圣女，兼峨眉出身。</p>
+<hr class="orn">
+<h3 id="sec4" class="chap">二　十二卷总结构</h3>
+<h4 id="sec5" class="cat">第一卷　钟山雨（第一回至第十回）</h4>
+<p>主题为故乡、身世、初劫。铺写洪武三十一年钟山药庐、陆九渊行医济世、陆云海少年性情、药王村人情世故、孝陵卫戒严、圣火教余党潜回、方天行夜访、沈灵犀秦淮初见、赫连铁搜山、药庐血夜、假灯断桥、外市潜行与孝陵荒烟。</p>
+<p>本卷要使读者先爱上钟山，再看钟山毁灭。陆九渊之死不急于来，而要在十回之间不断加深父子情分，让云海离乡成为全书第一重痛。</p>
+<h4 id="sec6" class="cat">第二卷　乌衣巷（第十一回至第二十回）</h4>
+<p>主题为旧脉、追索、危城出关。云海与沈灵犀自秦淮、白鹭洲、乌衣巷一路追入楚门旧线，半舫残灯、鬼簿残图、旧轿传语、封井渗脉与禁山碑林彼此相扣。孟老尼、何瘸子、薛照白等人相继并线，判官笔屑、逆火血与陆九渊药号布条将旧案越牵越深。卷末众人借白马路出城，经旧陶窑、玄关、饥民、败兵与黑店残局，真正踏入乱世江湖。</p>
+<h4 id="sec7" class="cat">第三卷　清溪渡（第二十一回至第三十回）</h4>
+<p>主题为流离、盐路、暗网。众人自清溪废栈、渡口逆旅、白柳汊、盐棚、废盐仓一路追查人口暗运与并签路数，顾迟、病书生、老秤手、阮秋娘、阮阿青等线头陆续汇拢。白石岭、北塌道、断松坳、回身谷、灰鹞埠、真签假签层层翻出，盐货生意背后的人命账与“半缺七”初见真形。</p>
+<h4 id="sec8" class="cat">第四卷　石门栈（第三十一回至第四十回）</h4>
+<p>主题为窑口、栈口、锁签与北笔。回身谷后沟断桥之后，众人分扑废仓、石门栈与西北废窑。简四、曲三算盘、火背公、卢照签先后露面，黑风窟、灰坡低口、回风线、栈镜、黑账与锁签客渐次相扣。本卷重在把半缺七、北笔、旧脉口三线真正绞到一起，并把云海身上长命锁的“锁认人”之谜推至台前。</p>
+<h4 id="sec9" class="cat">第五卷　秦淮血（第四十一回至第五十回）</h4>
+<p>主题为归城、转手、情局与追血。石门栈一局之后，黑牌过门，锁签转手，云海腕间长命锁新添一齿，顾迟、薛照白、火背公与北笔诸线都不肯断。众人南返金陵，秦淮画舫、血巷旧歌、锦衣暗哨与旧门残脉交错并起，沈灵犀、朱若兰两线重新并入。情与局自此第一次真正互相伤人，本卷重在把“路入人骨”之后的追索、儿女之情与金陵暗网一并推开。</p>
+<h4 id="sec10" class="cat">第六卷　苍山雪（第五十一回至第六十回）</h4>
+<p>主题为寻母与南疆。云海入云南，借沈灵犀旧信物进入沐王府与点苍势力范围。扩写滇南山川、白族村寨、沐王府军政、点苍剑派、圣火教旧密室。楚昭凰遗书出现，云海得知母亲真相，也第一次明白自己并非只属于江湖，而是诸多旧债的中心。</p>
+<h4 id="sec11" class="cat">第七卷　玄岳雷（第六十一回至第七十回）</h4>
+<p>主题为归元与师恩。云海重返武当，靖难局势逼近金陵。玉霄子围山试探，纪纲暗线渗透，白莲余众趁火打劫。云海在紫霄密室得太虚真经下卷，三气冲突几近走火。清虚真人舍纯阳真元，道衍以佛门大力相助，云海三气归元，清虚真人元气大损。</p>
+<h4 id="sec12" class="cat">第八卷　江山残（第七十一回至第八十回）</h4>
+<p>主题为国破。云海东下金陵，见建文旧臣殉难、方孝孺十族惨祸、宫城火起、帝都易主。朱若兰身陷帝阙，建文帝削发逃亡之谜展开。云海先后与赫连铁、纪纲、玉霄子交锋，救出朱若兰与逊帝。朱若兰在家国、兄长与情爱之间痛苦抉择。</p>
+<h4 id="sec13" class="cat">第九卷　古寺寒（第八十一回至第九十回）</h4>
+<p>主题为逃亡与授玺。云海护逊帝、朱若兰、沈灵犀出金陵，在江南古寺、荒村、江畔、破船之间辗转。赫连铁追杀却逐渐动摇。道衍现身，与云海论天下棋局。逊帝江畔授玺，云海第一次真正背上苍生之重。朱若兰削发入空门，云海经历求不得之痛。</p>
+<h4 id="sec14" class="cat">第十卷　永乐网（第九十一回至第一百回）</h4>
+<p>主题为新朝与旧债。永乐初年，瓜蔓株连，锦衣卫大索天下。云海与沈灵犀行侠江淮，暗救建文旧臣遗孤。苏牧之揭开圣火教助明开国、功成遭戮的秘史。太祖密旨真正意义浮现：它不是简单勤王令，而是朱明正统与开国血约的罪证。云海陷入复仇与苍生之间的深渊。</p>
+<h4 id="sec15" class="cat">第十一卷　玄岳劫（第一百一回至第一百一十回）</h4>
+<p>主题为终局前夜。云海重登武当，清虚真人仙逝。群雄因太虚真经与密旨云集玄岳，昆仑残部、白莲余众、锦衣卫、各派宿怨同时爆发。赫连铁回头报恩，与云海并肩。纪纲设天罗地网，道衍携密旨亲至。云海于众目睽睽之下作出最终决定。</p>
+<h4 id="sec16" class="cat">第十二卷　云海无涯（第一百一十一回至第一百二十回）</h4>
+<p>主题为放下与余韵。云海焚毁《太虚真经》与太祖密旨，昭告天下不是一纸遗诏可定。各方反应分化：有人释然，有人疯狂，有人悔悟。赫连铁北戍死节，朱若兰空门清修，苏牧之浪迹记史，道衍退入历史阴影。郑和下西洋，建文传说远入海天。云海封玺隐名，携沈灵犀归隐苍山洱海。全书终于云海无涯。</p>
+<hr class="orn">
+<h3 id="sec17" class="chap">三　主要人物长篇弧线</h3>
+<h4 id="sec18" class="cat">陆云海</h4>
+<p>起点为钟山药庐少年，终点为焚经弃权的一代大侠。百万字版分四阶：少年之仁，江湖之勇，家国之痛，苍生之悟。前期重在写他的质朴、医者之心与不忍；中期重在写武学成长、情感牵绊、身世震荡；后期重在写权力诱惑与复仇诱惑；终局重在写放下。</p>
+<h4 id="sec19" class="cat">沈灵犀</h4>
+<p>不只是归宿型女主。长篇版要写她在沐王府、云南军政、点苍旧缘之间的自我选择。她的明丽、机敏、毒针与医心并重。她爱云海，却不依附云海；她既能救人，也能杀人，既懂江湖，也懂世道。她最终与云海归隐，不是退场，而是主动选择一条不被权力吞没的人间路。</p>
+<h4 id="sec20" class="cat">朱若兰</h4>
+<p>她是天家女儿，也是乱世囚徒。长篇版要写她从女扮男装的骄傲少年、到峨眉剑下的孤臣公主、再到国破后的空门女子。她与云海之情不是简单错过，而是两种责任无法合并。她的出家不是失败，而是从复国执念中自救。</p>
+<h4 id="sec21" class="cat">赫连铁</h4>
+<p>他是云海的镜像。前期为鹰犬，手段冷酷；中期显出家族冤案伤痕；后期在云海不杀之恩下渐渐崩裂旧壳。长篇版需增加他与锦衣卫、纪纲、朱棣之间的复杂关系，使其回头不突兀。</p>
+<h4 id="sec22" class="cat">道衍</h4>
+<p>他不是普通反派。长篇版中，道衍既是靖难棋手，也是看透权力虚妄的人。他推动乱世，又试图约束乱世；他利用云海，又欣赏云海。终局时，他亲呈密旨，不是为了夺，而是为了试。</p>
+<hr class="orn">
+<h3 id="sec23" class="chap">四　回目初排</h3>
+<h4 id="sec24" class="cat">第一卷　钟山雨</h4>
+<p>第一回　钟山雨细藏龙影　药庐灯暖照孤儿</p>
+<p>第二回　孝陵夜半来青客　旧案灯前动故人</p>
+<p>第三回　秦淮初见金针影　画舫惊逢玉佩光</p>
+<p>第四回　老父悬壶怜病骨　少年试胆护村童</p>
+<p>第五回　圣火余灰燃夜雨　青衫旧使叩柴门</p>
+<p>第六回　丧钟九响惊城阙　一掌千钧退故盟</p>
+<p>第七回　锦衣搜山翻旧案　判官落笔索遗孤</p>
+<p>第八回　药庐血溅恩难报　残卷灯残恨始生</p>
+<p>第九回　假灯引火迷官道　孤影断桥护少郎</p>
+<p>第十回　秦淮旧肆藏残客　孝陵荒烟困故人</p>
+<h4 id="sec25" class="cat">第二卷　乌衣巷</h4>
+<p>第十一回　半舫青灯逢旧影　禁山白露锁孤臣</p>
+<p>第十二回　白鹭洲头藏鬼簿　枯祠月下验残图</p>
+<p>第十三回　乌巷旧轿传残语　碑林孤掌拒追兵</p>
+<p>第十四回　楚门暗井开残脉　禁地孤碑照冷锋</p>
+<p>第十五回　白马晨嘶穿晓雾　青衣冷笔迫危门</p>
+<p>第十六回　江湖客至传兵火　北平旗举震中原</p>
+<p>第十七回　师徒夜话忧天下　少年晨别下玄关</p>
+<p>第十八回　官道饥民啼落日　败兵横刀逼侠肠</p>
+<p>第十九回　黑店灯昏藏杀局　铁面书生落残棋</p>
+<p>第二十回　破局方知人世险　临歧遥望故山云</p>
+<h4 id="sec26" class="cat">第三卷　清溪渡</h4>
+<p>第二十一回　废栈残符通旧驿　清溪短棹避追兵</p>
+<p>第二十二回　渡口寒灯逢逆旅　船头夜雨试同心</p>
+<p>第二十三回　白柳夜静分真假　盐栈灯微候后舟</p>
+<p>第二十四回　废仓暗线惊残局　高埂孤灯辨敌踪</p>
+<p>第二十五回　烽台夜裂双边局　塌道风寒一线生</p>
+<p>第二十六回　地灯西引穿松坳　活图暗藏入木墙</p>
+<p>第二十七回　谷口哨寒分假路　林灯影乱辨真签</p>
+<p>第二十八回　废仓灯冷开真匣　晓雾山深候七爷</p>
+<p>第二十九回　桥侧微签惊使眼　雾中短刃逼真名</p>
+<p>第三十回　废仓晨逼双岔路　石栈云寒两处疑</p>
+<h4 id="sec27" class="cat">第四卷　石门栈</h4>
+<p>第三十一回　灰坡风冷寻窑口　黑窟声沉伏守风</p>
+<p>第三十二回　灰道惊回藏后手　石栈云薄压前关</p>
+<p>第三十三回　灰旗下账分明路　石门前手换活签</p>
+<p>第三十四回　照骨七阶分生死　北脊双眼试真形</p>
+<p>第三十五回　闸后微光开半口　脊前旧锁夺先机</p>
+<p>第三十六回　岩罅三声催旧口　灰旗下步试前心</p>
+<p>第三十七回　半牌离岩惊四手　一锁认主乱群锋</p>
+<p>第三十八回　半手先沾惊旧认　三锋齐到夺残牌</p>
+<p>第三十九回　中口微悬分主客　乱锋初合见生杀</p>
+<p>第四十回　半门一扣翻宾主　断牌双分引去来</p>
+<h4 id="sec28" class="cat">第五卷　秦淮血</h4>
+<p>第四十一回　石栈风收分去路　秦淮灯冷照归人</p>
+<p>第四十二回　画舫旧歌牵血约　绣阁新局试深心</p>
+<p>第四十三回　绣阁帘深翻旧诺　秦淮月冷照离心</p>
+<p>第四十四回　暗水穿街通旧宅　残灯照井辨前盟</p>
+<p>第四十五回　井上三叩分真伪　笺中一笔辨来人</p>
+<p>第四十六回　细布牵宫翻旧影　残灰覆井断来踪</p>
+<p>第四十七回　香壁潜形窥后手　秦淮隔水认宫灯</p>
+<p>第四十八回　黑巷移灯分暗哨　危楼借火试深门</p>
+<p>第四十九回　残扣照影寻旧谱　短笺移局逼新踪</p>
+<p>第五十回　南火照门分假真　青灯引锁启重关</p>
+<h4 id="sec29" class="cat">第六卷　苍山雪</h4>
+<p>第五十一回　薄匣翻纹牵滇路　残笺照雪认慈踪</p>
+<p>第五十二回　苍洱风高藏驿火　点苍月冷验王符</p>
+<p>第五十三回　白石喉深开旧径　寒潭灯冷照遗痕</p>
+<p>第五十四回　废乳泉阴藏寺影　残钟井冷试聋翁</p>
+<p>第五十五回　乳市喧声藏夜约　西营黑桩验残符</p>
+<p>第五十六回　残令对案分真伪　孤灯照影问营谋</p>
+<p>第五十七回　雪驿传笺惊旧部　洱城借局探深门</p>
+<p>第五十八回　灰墙借货开仓隙　暗板移灯认账钉</p>
+<p>第五十九回　旧簿翻痕惊郡主　密廊分钥见遗书</p>
+<p>第六十回　废井潜踪穿寺影　洗池定针辨真门</p>
+<h4 id="sec30" class="cat">第七卷　玄岳雷</h4>
+<p>第六十一回　影石分图催北返　玄岳飞符动旧心</p>
+<p>第六十二回　栈雨移踪惊夜哨　江灯借渡避山客</p>
+<p>第六十三回　汉皋道左逢真伪　紫霄云外起风雷</p>
+<p>第六十四回　废亭借径分钟信　古涧藏灯试道心</p>
+<p>第六十五回　香客乱山翻假牒　紫霄隔雨见真门</p>
+<p>第六十六回　旧阁翻经惊内影　白灯照壁认残真</p>
+<p>第六十七回　云磬夜分摇假令　玉霄雨压逼真山</p>
+<p>第六十八回　太虚半卷开玄匣　三脉争衡走火门</p>
+<p>第六十九回　纯阳回鼎扶危局　佛印临坛镇劫灰</p>
+<p>第七十回　紫霄雷歇收残局　云海归元别旧恩</p>
+<h4 id="sec31" class="cat">第八卷　江山残</h4>
+<p>第七十一回　东驿残灯闻急变　秦淮夜雨入危城</p>
+<p>第七十二回　旧巷分符穿禁旅　危楼隔火觅兰身</p>
+<p>第七十三回　午门血诏埋忠骨　宫阙寒钟裂帝京</p>
+<p>第七十四回　十族名沉翻旧狱　一钗人出过重门</p>
+<p>第七十五回　绣阁残香牵帝脉　金枝冷泪隔兵尘</p>
+<p>第七十六回　地道移銮藏断简　僧衣掩玺出危垣</p>
+<p>第七十七回　判笔追魂封水驿　玄阴压岸夺江船</p>
+<p>第七十八回　故阙回风迷北望　荒寺分途裂旧盟</p>
+<p>第七十九回　玉佩重圆开旧案　龙袍半烬认真身</p>
+<p>第八十回　江山未死埋残玺　海雨将寒送故人</p>
+<h4 id="sec32" class="cat">第九卷　古寺寒</h4>
+<p>第八十一回　野渡收篙藏破篷　寒钟隔雨入空门</p>
+<p>第八十二回　荒村借灶分残粥　败壁留灯避恶潮</p>
+<p>第八十三回　判笔循江穿芦荡　残僧闭户识真伪</p>
+<p>第八十四回　枯井烹茶逢异客　破窗照影论兴亡</p>
+<p>第八十五回　道衍半偈开残局　夜雨孤篷渡险滩</p>
+<p>第八十六回　病骨临流观世网　微灯照案认人心</p>
+<p>第八十七回　宿鹭惊飞翻旧渡　寒潮倒卷没追蹄</p>
+<p>第八十八回　半卷残经销孽火　一绺青丝断俗缘</p>
+<p>第八十九回　江畔授玺分轻重　石滩埋梦隔生死</p>
+<p>第九十回　古寺钟残人各去　天涯雨冷各西东</p>
+<h4 id="sec33" class="cat">第十卷　永乐网</h4>
+<p>第九十一回　江市藏灯收旧裔　秋汊沉舟避缇骑</p>
+<p>第九十二回　药灶分丸护遗骨　驿墙留血警追缨</p>
+<p>第九十三回　废宅移孤穿夜雨　吴门撒网试真心</p>
+<p>第九十四回　布衣说史翻前约　残简埋尘认旧盟</p>
+<p>第九十五回　海图半卷牵龙影　圣火前尘照帝基</p>
+<p>第九十六回　判笔压江催宿债　孤舟借雾渡惊湍</p>
+<p>第九十七回　密旨双开分善恶　血盟再验裂公私</p>
+<p>第九十八回　瓜蔓连城惊旧巷　霜灯照夜辨新仇</p>
+<p>第九十九回　遗孤星散穿淮浦　残玺心沉隔怒潮</p>
+<p>第一百回　永乐天罗收旧梦　云海孤怀问苍生</p>
+<h4 id="sec34" class="cat">第十一卷　玄岳劫</h4>
+<p>第一百一回　芦泽辞灯奔北岳　寒磬入夜动山门</p>
+<p>第一百二回　素幡出殿催仙蜕　残雪压阶辨伪真</p>
+<p>第一百三回　昆仑裂阵压云磴　锦衣移签锁上宫</p>
+<p>第一百四回　判笔回锋酬旧诺　危崖并命破天罗</p>
+<p>第一百五回　白莲借火焚丹阁　群客争门裂太和</p>
+<p>第一百六回　道人携旨登玄顶　灵坛对众辨公私</p>
+<p>第一百七回　真卷半展惊群议　旧债重陈动百峰</p>
+<p>第一百八回　太极雨翻分敌友　紫霄钟断见人心</p>
+<p>第一百九回　孤怀一决辞前梦　众目同临问后途</p>
+<p>第一百一十回　玄岳劫余收夜雪　天鸡将晓压终棋</p>
+<h4 id="sec35" class="cat">第十二卷　云海无涯</h4>
+<p>第一百一十一回　素幡未彻分宾主　雪径重开问去留</p>
+<p>第一百一十二回　半筹夜合惊前约　一命山移出后门</p>
+<p>第一百一十三回　判笔翻营酬旧义　玄阴裂阵见真降</p>
+<p>第一百一十四回　道人携海陈终局　众峰对雪照人心</p>
+<p>第一百一十五回　真卷全开明生死　密旨双列断兴亡</p>
+<p>第一百一十六回　一炬焚经沉宿业　千峰罢剑息狂澜</p>
+<p>第一百一十七回　北地孤城埋铁骨　空门清磬送兰因</p>
+<p>第一百一十八回　史笔收灯分海雨　龙帆入夜没遗踪</p>
+<p>第一百一十九回　残玺封尘辞旧梦　苍山洗手种新茶</p>
+<p>第一百二十回　万里云归无定处　一生海阔有余心</p>
+<hr class="orn">
+<h3 id="sec36" class="chap">五　写作执行原则</h3>
+<p>一，每回完成后复核设定、时间、称谓、标点、人物动机。</p>
+<p>二，每卷保持三条线并进：江湖冲突、历史大势、儿女情感。</p>
+<p>三，每十回设置一处强高潮，每三回设置一处小反转。</p>
+<p>四，重要人物不只服务主线，必须有自己的欲望、恐惧与选择。</p>
+<p>五，武打不堆招名，须以环境、心理、内力变化写出画面。</p>
+<p>六，历史事件尊重基本时间线，虚构情节嵌入史缝，不改大势。</p>
+<hr class="orn">
+<p><em>（百万字长篇版总纲毕）</em></p>
+<div class="nav"><span></span><a href="index.html">返回索引</a><a href="楔子.html">楔子　圣火劫余　玄鸟遗孤 →</a></div>
+</main>
+<footer class="footer">— 云海江湖录·百万字长篇版 —</footer>
+</div>
+<script>
+const themeBtn = document.getElementById('themeBtn');
+function setTheme(dark){
+  document.body.classList.toggle('dark', dark);
+  if(themeBtn){ themeBtn.textContent = dark ? '☀' : '☾'; }
+  try{ localStorage.setItem('yh_long_dark', dark ? '1' : '0'); }catch(e){}
+}
+if(themeBtn){
+  themeBtn.addEventListener('click', function(){ setTheme(!document.body.classList.contains('dark')); });
+}
+try{ setTheme(localStorage.getItem('yh_long_dark') === '1'); }catch(e){ setTheme(false); }
+</script>
+</body>
+</html>

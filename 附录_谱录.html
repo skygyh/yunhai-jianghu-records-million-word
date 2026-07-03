@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>附录　谱录</title>
+<style>
+:root{--bg:#f6f1e7;--fg:#33302b;--muted:#8a8273;--rule:#ddd2bd;--accent:#8a5a2b;--quote:#efe7d6;--link:#6b4a2b;--card:#fbf7ef;}
+body.dark{--bg:#17150f;--fg:#dcd6c8;--muted:#938b79;--rule:#39342a;--accent:#cd9f5e;--quote:#211e17;--link:#d9b277;--card:#1d1a14;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--fg);transition:background .3s,color .3s;font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong","SimSun",Georgia,serif;}
+a{color:var(--link);text-decoration:none;}
+a:hover{text-decoration:underline;}
+.page{max-width:860px;margin:0 auto;padding:0 24px 96px;}
+.cover{padding:12vh 0 6vh;text-align:center;border-bottom:1px solid var(--rule);}
+.book-title{font-size:2.8rem;letter-spacing:.28em;text-indent:.28em;margin:0 0 .4em;font-weight:700;}
+.book-sub{color:var(--accent);font-size:1.08rem;letter-spacing:.16em;margin:.3em 0;}
+.book-meta{color:var(--muted);font-size:.92rem;letter-spacing:.12em;margin-top:1.8em;}
+.toolbar{position:fixed;right:20px;bottom:20px;display:flex;flex-direction:column;gap:10px;z-index:60;}
+.fab{width:46px;height:46px;border-radius:50%;border:1px solid var(--rule);background:var(--quote);color:var(--fg);font-size:1.18rem;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,.15);}
+.fab:hover{border-color:var(--accent);color:var(--accent);text-decoration:none;}
+.section{padding:5vh 0;border-bottom:1px solid var(--rule);}
+.toc-title{font-size:1.55rem;text-align:center;letter-spacing:.4em;text-indent:.4em;color:var(--accent);margin-bottom:1.2em;}
+.toc-list{list-style:none;padding:0;margin:0;}
+.toc-vol{margin:1em 0 .2em;font-size:1.15rem;font-weight:700;}
+.toc-sub{list-style:none;padding-left:1.4em;margin:.35em 0 .85em;columns:2;column-gap:2em;}
+.toc-chap{margin:.18em 0;font-size:.96rem;break-inside:avoid;}
+.content{padding-top:4vh;}
+.content p{margin:.15em 0;text-indent:2em;text-align:justify;font-size:1.12rem;line-height:2.02;letter-spacing:.012em;}
+.content ul,.content ol{padding-left:1.6em;line-height:1.95;}
+.content li{margin:.5em 0;text-align:justify;}
+h2.vol{font-size:2.1rem;text-align:center;letter-spacing:.45em;text-indent:.45em;color:var(--accent);margin:14vh 0 6vh;padding-bottom:.6em;border-bottom:1px solid var(--rule);}
+h2.vol:first-of-type{margin-top:3vh;}
+h3.chap{font-size:1.45rem;text-align:center;font-weight:700;letter-spacing:.06em;line-height:1.8;margin:7vh 0 3.6vh;}
+h4.cat{font-size:1.12rem;color:var(--accent);letter-spacing:.12em;margin:2.4em 0 .8em;}
+hr.orn{border:none;text-align:center;margin:2.6em 0;height:1em;}
+hr.orn::before{content:"❖";color:var(--muted);letter-spacing:1em;font-size:1rem;}
+blockquote{background:var(--quote);border-left:3px solid var(--accent);margin:2.5em 0;padding:1em 1.4em;border-radius:6px;}
+blockquote p{text-indent:0;margin:.5em 0;font-size:1rem;line-height:1.9;}
+em{font-style:normal;color:var(--muted);letter-spacing:.08em;}
+strong{color:var(--accent);}
+.nav{display:flex;justify-content:space-between;gap:16px;margin:24px 0 0;flex-wrap:wrap;}
+.nav a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--rule);border-radius:999px;background:var(--card);}
+.nav a:hover{border-color:var(--accent);text-decoration:none;}
+.index-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:28px;}
+.card{display:block;padding:18px;border:1px solid var(--rule);border-radius:16px;background:var(--card);min-height:132px;}
+.card:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px);}
+.card-title{font-size:1.08rem;font-weight:700;color:var(--accent);margin-bottom:10px;}
+.card-meta{font-size:.92rem;color:var(--muted);line-height:1.8;}
+.card-detail{margin-top:14px;border-top:1px solid var(--rule);padding-top:12px;}
+.card-detail summary{cursor:pointer;color:var(--fg);font-size:.96rem;}
+.card-detail summary:hover{color:var(--accent);}
+.chapter-links{list-style:none;padding:10px 0 0 0;margin:0;columns:2;column-gap:1.4em;}
+.chapter-link{margin:.28em 0;break-inside:avoid;line-height:1.7;font-size:.92rem;}
+.chapter-link a{color:var(--link);}
+.footer{text-align:center;color:var(--muted);letter-spacing:.3em;text-indent:.3em;padding:7vh 0 10vh;}
+@media(max-width:680px){.book-title{font-size:2.15rem;letter-spacing:.18em;text-indent:.18em;}.toc-sub{columns:1;}.content p{font-size:1.06rem;}.fab{width:42px;height:42px;}.page{padding:0 18px 88px;}.chapter-links{columns:1;}}
+</style>
+</head>
+<body>
+<div id="top"></div>
+<div class="toolbar">
+<button id="themeBtn" class="fab" title="昼夜切换">☾</button>
+<a href="#top" class="fab" title="返回顶部">↑</a>
+<a href="#toc" class="fab" title="目录">☰</a>
+</div>
+<div class="page">
+<header class="cover">
+<h1 class="book-title">附录　谱录</h1>
+<p class="book-sub">云海江湖录·百万字长篇版</p>
+<p class="book-meta">附录_谱录.md · 约3508字</p>
+</header>
+<section id="toc" class="section">
+<div class="toc-title">目录</div>
+<ul class="toc-list">
+<li class="toc-vol"><a href="#sec2">附录　谱录</a>
+<ul class="toc-sub">
+<li class="toc-chap"><a href="#sec3">一　人物谱</a></li>
+<li class="toc-chap"><a href="#sec17">二　势力谱</a></li>
+<li class="toc-chap"><a href="#sec24">三　武学谱</a></li>
+<li class="toc-chap"><a href="#sec30">四　器物谱</a></li>
+<li class="toc-chap"><a href="#sec37">五　大事年表</a></li>
+<li class="toc-chap"><a href="#sec38">六　终卷要义小记</a></li>
+</ul></li>
+</ul>
+</section>
+<main class="content">
+<h2 id="sec2" class="vol">附录　谱录</h2>
+<hr class="orn">
+<h3 id="sec3" class="chap">一　人物谱</h3>
+<h4 id="sec4" class="cat">陆云海</h4>
+<p>钟山药庐养大的孤儿，陆九渊义子。全书主角。由乡野少年一路走入金陵、点苍、玄岳与海上旧局之间，最终看尽家仇、国恨、权位与苍生之重，于第十二卷焚卷断旨，封玺埋名，归隐苍山洱海。其人最重医心与不忍，亦最易被旧债与责任所困，长篇版完整弧线即由“背负”走至“放下”。</p>
+<h4 id="sec5" class="cat">沈灵犀</h4>
+<p>云南沐王府郡主，七星追魂针传人，兼具医心与杀伐。她并非单纯归宿型人物，而是自有出身、立场、手艺与选择的一条完整线。前中期在家国、王府、点苍与情感间反复衡量，终卷并未“附于”云海，而是主动与其共择一条不再被权势吞没的人间路，归于苍山药圃茶坡，行医种茶，济人自安。</p>
+<h4 id="sec6" class="cat">朱若兰</h4>
+<p>天家女儿，亦是乱世孤臣。其线由骄矜少年、宫阙旧梦、国破家亡，到残寺空门与兰因了断，层层递进。她与云海之情并非简单错失，而是两种责任在乱世中始终难以合一。终局消息至残寺时，她终于能把“莫忘来处”与“莫再误苍生”一并放下，转以空门清磬护持后来活人。</p>
+<h4 id="sec7" class="cat">赫连铁</h4>
+<p>左颊有疤，使玄铁判官笔，曾为鹰犬与纪纲旧网中最冷的一支笔。其人非善类，手上沾血极多，却也因此最知“拿活人垫底”的冷与脏。后期在云海不杀之恩与一路所见中旧壳渐裂，终卷于玄岳后门翻营酬义，把夜缨残骑与昆仑余锋一路北引，死于铁风孤城风雪，埋铁骨于无字废城。</p>
+<h4 id="sec8" class="cat">道衍</h4>
+<p>靖难棋手，亦是终局试心之人。其人从不只是单纯反派，也非干净高僧，而是看透权力、又不肯完全离局的深局之人。第十二卷中携海图、前约、密旨而来，不替任何人偷懒作答，只不断把最难处摆到云海与众人面前，逼其自认、自舍、自断，终退入历史阴影之中。</p>
+<h4 id="sec9" class="cat">苏牧之</h4>
+<p>书生、旧史追索者、前约残证与海图一路护持之人。其弧线最重“如何写史而不再以史逼人”。前期执于求证与留实，终卷则学会“记其事，勿逼其名”“传说可留，名字当轻”，晚年私札成全书最轻也最稳的一道余灯。</p>
+<h4 id="sec10" class="cat">成默</h4>
+<p>玄岳外观中坚，终卷中前庭礼序与案前并列诸物的实际主持者。其作用不在惊天动地，而在最乱时仍能守住“秩序”这一层最细最易被人轻看的骨架，使玄岳不因后门之动而先自乱。</p>
+<h4 id="sec11" class="cat">成朴</h4>
+<p>武当门下干练之士，认路、守门、断后皆极稳。第十二卷后门局中专守“里半尺”，是把云海“先守最要紧那一点”真正落成剑上与脚下分寸的关键人物之一。</p>
+<h4 id="sec12" class="cat">顾南归</h4>
+<p>江淮暗线与细路续命之人。其作用常不在明面大局，而在最细处替活人接线、藏人、断眼、续路。终卷中又北上探铁风孤城、南下看海陵港雨，是整部书中最懂“止步”与“护到什么地方该停”的人之一。</p>
+<h4 id="sec13" class="cat">阿黛</h4>
+<p>一路护灰而行之人。她所抱的并不只是两匣骨灰，而是许多无碑无冢、最怕再被忘掉的前尘。终卷中骨灰终得暂安，也象征一路被人背着躲藏的无名者终于有了一处不再轻易被挪走的落处。</p>
+<h4 id="sec14" class="cat">法尘</h4>
+<p>灰衣老僧，代故人认路、送人出后门者。其人看似寂淡，实则极稳，真正将“人出后门”这条只为护命不为护位的旧路，从卷上与约上一路送到了石门与弃樵洞之间。</p>
+<h4 id="sec15" class="cat">许老仆</h4>
+<p>东宫旧内侍，建文海上埋名一路最后的旧随侍。其口中旧绢残句与一路相伴，补足前约与断名之义，也使“海上病僧”那条路始终带着人间最沉最旧的一层忠与哀。</p>
+<h4 id="sec16" class="cat">顾子衍</h4>
+<p>昆仑玄阴阵中真降者。并非主线大角，却是终卷中“人心之裂”最鲜明的一道现身：临阵弃阵，不愿再替争势把护命踩成夺人，令“玄阴裂阵见真降”真正落成人心之断。</p>
+<hr class="orn">
+<h3 id="sec17" class="chap">二　势力谱</h3>
+<h4 id="sec18" class="cat">武当玄岳一脉</h4>
+<p>全书最重要的山门骨架之一。既是云海后期师门归处，也是终局时承受群峰、群客、昆仑、纪纲、旧主与前约多重压力的中心。其最大价值并不在“掌有真卷”，而在几经分裂与逼问后，终究仍有人肯守住“公私不得相混”“护命不得护位”这两条最难之界。</p>
+<h4 id="sec19" class="cat">昆仑残部</h4>
+<p>常以“道统”“真卷”“山门旧法”自居，实则内部亦非铁板一块。玉霄子一路借名理逼山，裴照寒则更冷更偏，更重争势与断门。终卷顾子衍真降，象征昆仑内部亦终于有人看清：若连“位可绝，命不可绝”都不认，所争便已不是道，而只是脸与势。</p>
+<h4 id="sec20" class="cat">纪纲夜网与锦衣旧线</h4>
+<p>庙堂暗手中最冷最脏的一层。其强不在正面扑杀，而在顺手捡缺、借名收网、把活人一格格先逼成别人的垫底。赫连铁即出于此线，也因看透这一层，最终在终局之夜彻底自旧网中翻出。</p>
+<h4 id="sec21" class="cat">圣火旧脉</h4>
+<p>为全书最深的血债来处之一。其与明初开国旧约、江湖密线、楚门旧脉、海图残层与钟山药庐一系都暗有相接。长篇版不将其写成简单邪教，而是把它写成曾在乱世中既扶新朝、也被新朝反噬的一团旧火。</p>
+<h4 id="sec22" class="cat">沐王府与点苍线</h4>
+<p>代表边地军政、滇西山川与沈灵犀来处的一层人间现实。它既给了沈灵犀立身之根，也让全书不止于钟山与金陵二极，而真有从云南到江淮、从边地到京师的一整幅天地。</p>
+<h4 id="sec23" class="cat">海上埋名之路</h4>
+<p>并非传统意义上的门派势力，而是由海图残层、前约尾注、旧港副舶与知情者共同守出的最后一条“断名路”。其意义不在东山再起，而在“只记生死，不记统名”。</p>
+<hr class="orn">
+<h3 id="sec24" class="chap">三　武学谱</h3>
+<h4 id="sec25" class="cat">太虚真卷</h4>
+<p>全书最重之卷，却并非用来替谁“定兴亡”的权物。卷中前段写三气归一与玄门回环，后段则渐渐由武入理，终写到“执卷而欲定兴亡者，先失其真”“欲借兴亡者，当焚”。其“真”不站位、不背书、不替任何人偷懒，终在第十二卷为云海亲手焚之。</p>
+<h4 id="sec26" class="cat">玄阴二十四剑</h4>
+<p>昆仑一脉最冷也最偏锋的剑路。长于切格、逼位、裂阵，不必招招求杀，却最善把局切碎，令对手不得不在更小处舍谁保谁。终卷后门一战中“玄阴裂阵”把这种路数发挥到极致。</p>
+<h4 id="sec27" class="cat">七星追魂针</h4>
+<p>沈灵犀所擅。既可杀，亦可医。真正高处不止于针快，而在认脉、认伤、认人心与认“此刻该救还是该断”。她的针法与药理并行，也是全书里“医与杀本不必截然分裂”的代表。</p>
+<h4 id="sec28" class="cat">玄铁判官笔</h4>
+<p>赫连铁所使。其妙不在华美，而在最冷、最短、最会点人脚下与心里那半寸缝。后期它不再只是鹰犬收网之笔，终卷更成把夜缨与昆仑一并往北牵开的最后一支断后之笔。</p>
+<h4 id="sec29" class="cat">纯阳归元与三气之争</h4>
+<p>为云海成长后期最重要的身内之劫。三气争于身，如公私争于世，皆是“若不调和，先焚其人”。玄岳一卷到终卷真卷全开，其实都在反复照这一层内外互证。</p>
+<hr class="orn">
+<h3 id="sec30" class="chap">四　器物谱</h3>
+<h4 id="sec31" class="cat">玄鸟佩</h4>
+<p>云海最早贴身之物，关联其身世与圣火旧火来处。其意义不在贵重，而在“你是谁”这一问最早最深的一层凭依。</p>
+<h4 id="sec32" class="cat">长命锁</h4>
+<p>一路反复示警、发烫、认人之物。它既是器物，也是许多旧债与人命密线反复扣在云海身上的象征。</p>
+<h4 id="sec33" class="cat">残玺</h4>
+<p>自第九卷授玺之后一路压在云海心口的重物。它既可代表旧统，也可代表一代人对“名与位究竟值不值得再替它们多死”的极难发问。终在苍山茶树下封尘。</p>
+<h4 id="sec34" class="cat">海图残层</h4>
+<p>不是起兵图，而是断名图、埋名图。其真正所指，从来不是“如何东山再起”，而是“若位已不可举，人该如何只活下去而不再把旧统带回陆上”。</p>
+<h4 id="sec35" class="cat">前约残绢</h4>
+<p>补足朱家负约、自裂其统后，山门只可护命不可举位的最硬旧法。它与海图尾注共同构成终局后门之理的两重根底。</p>
+<h4 id="sec36" class="cat">卷灰与旨灰</h4>
+<p>真卷与双旨焚后所留。其价值已不在“可争”，而在“可记”。灰存而物不存，恰好使后来之人再难借物压人，却仍不能轻易忘了曾有这么一夜。</p>
+<hr class="orn">
+<h3 id="sec37" class="chap">五　大事年表</h3>
+<ul><li>洪武初年，圣火旧坛遭灭，玄鸟佩、旧绢与婴儿自火中走失。</li><li>洪武末年，陆九渊于钟山药庐养大云海，药王村旧日成全书最早故乡。</li><li>孝陵风雨之夜，云海身世线初开，钟山旧火与江湖暗债重新浮起。</li><li>秦淮、乌衣巷、楚门旧脉、清溪盐路、石门栈口诸线相继铺开，长命锁、鬼簿、旧脉与北笔层层相扣。</li><li>云海入云南，沈灵犀来处、点苍线与楚昭凰遗痕皆明。</li><li>云海返玄岳，三气走火，清虚真人与道衍出手，真卷下半渐启。</li><li>金陵易主，建文出逃，授玺江畔，朱若兰空门线起。</li><li>江淮旧债与太祖密旨之义渐明，云海陷于复仇与苍生之难。</li><li>第十一卷玄岳劫，群峰毕至，公私大辨，清虚真人灯灭。</li><li>第十二卷中，后门移命，建文出山，海图、前约、真卷、双旨并列案前。</li><li>云海焚真卷，断双旨，海上埋名路开；赫连铁北引诸敌，埋骨铁风孤城；朱若兰空门清磬；苏牧之收灯写史。</li><li>终局后，云海与沈灵犀归苍山洱海，残玺封尘，药圃种茶，行医济世，全书终于云海无涯。</li></ul>
+<hr class="orn">
+<h3 id="sec38" class="chap">六　终卷要义小记</h3>
+<ul><li><strong>护命而不护位</strong></li></ul>
+<p>这是终卷最硬的一道界。建文可以活，但旧统不能再借他活。</p>
+<ul><li><strong>认债而不误后人</strong></li></ul>
+<p>旧血债必须认，却不能继续拿来当压活人的新火。</p>
+<ul><li><strong>卷可照生死，不可定兴亡</strong></li></ul>
+<p>真卷之“真”不在替谁背书，而在照出人一旦执之定世，便先失其真。</p>
+<ul><li><strong>传说可留，名字当轻</strong></li></ul>
+<p>后世仍会有海上传说、北地孤城与玄岳卷灰的流言，但这些不该再成为新一轮争位的凭仗。</p>
+<ul><li><strong>知道之后，仍不误人</strong></li></ul>
+<p>这是全书最终真正留下来的那一句。不是不知，而是知尽之后，仍肯让后来活人活得轻一点。</p>
+<hr class="orn">
+<p><em>（附录毕）</em></p>
+<div class="nav"><a href="第十二卷_云海无涯.html">← 第十二卷_云海无涯</a><a href="index.html">返回索引</a><span></span></div>
+</main>
+<footer class="footer">— 云海江湖录·百万字长篇版 —</footer>
+</div>
+<script>
+const themeBtn = document.getElementById('themeBtn');
+function setTheme(dark){
+  document.body.classList.toggle('dark', dark);
+  if(themeBtn){ themeBtn.textContent = dark ? '☀' : '☾'; }
+  try{ localStorage.setItem('yh_long_dark', dark ? '1' : '0'); }catch(e){}
+}
+if(themeBtn){
+  themeBtn.addEventListener('click', function(){ setTheme(!document.body.classList.contains('dark')); });
+}
+try{ setTheme(localStorage.getItem('yh_long_dark') === '1'); }catch(e){ setTheme(false); }
+</script>
+</body>
+</html>
